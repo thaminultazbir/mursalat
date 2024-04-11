@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wasia's Countdown</title>
+  </head>
+  <body>
+    <audio src="./magical-voice.mp3" autoplay id="myAudio"></audio>
+    <!-- <h1>Exam Date: 30-June-2024<br />Time: 10:00 AM</h1> -->
+    <div class="container">
+      <div class="text-area">
+        <h1>Exam Date: 30-June-2024<br />Time: 10:00 AM</h1>
+        <h2>Wasia Only</h2>
+      </div>
+      <div id="time">
+        <!-- ============DAY============= -->
+        <div class="circle" style="--clr: #d58cff">
+          <div class="dots day_dot"></div>
+          <svg>
+            <circle cx="40" cy="40" , r="40"></circle>
+            <circle cx="40" cy="40" , r="40" id="dd"></circle>
+          </svg>
+          <div id="days">00<br /><span>Days</span></div>
+        </div>
+
+        <!-- ============/DAY/============= -->
+
+        <!-- ============Hour============= -->
+        <div class="circle" style="--clr: #ff2972">
+          <div class="dots hr_dot"></div>
+          <svg>
+            <circle cx="40" cy="40" , r="40"></circle>
+            <circle cx="40" cy="40" , r="40" id="hh"></circle>
+          </svg>
+          <div id="hours">00<br /><span>Hours</span></div>
+        </div>
+        <!-- ============/Hour/============= -->
+
+        <!-- ============Min============= -->
+        <div class="circle" style="--clr: #fee800">
+          <div class="dots min_dot"></div>
+          <svg>
+            <circle cx="40" cy="40" , r="40"></circle>
+            <circle cx="40" cy="40" , r="40" id="mm"></circle>
+          </svg>
+          <div id="minutes">00<br /><span>Mins</span></div>
+        </div>
+        <!-- ============/Min/============= -->
+
+        <!-- ============Second============= -->
+        <div class="circle" style="--clr: #04fc43">
+          <div class="dots sec_dot"></div>
+          <svg>
+            <circle cx="40" cy="40" , r="40"></circle>
+            <circle cx="40" cy="40" , r="40" id="ss"></circle>
+          </svg>
+          <div id="seconds">00<br /><span>Secs</span></div>
+        </div>
+        <!-- ============/Second/============= -->
+      </div>
+      <div class="scnd-txt">
+        <h2>Left</h2>
+        <h4>I know you can cover all your syllabus at this time.</h4>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
